@@ -1,17 +1,16 @@
 <template>
 <div>
   <p> fullname: {{fullname}} </p>
-  <lable>fullname: </lable><input type="text" v-model="fullname">
+  <label>fullname: </label><input type="text" v-model="fullname">
   <div>
- <lable>firstname: </lable><input type="text" v-model="firstname"> 
+ <label>firstname: </label><input type="text" v-model="firstname"> 
  </div>
  <div>  
-  <lable>lastname: </lable><input type="text" v-model="lastname">
+  <label>lastname: </label><input type="text" v-model="lastname">
 	</div>
 
 </div>
 </template>
-
 <script>
 
 
@@ -30,9 +29,9 @@ export default {
          return this.firstname +' '+ this.lastname
             },
        set(value){
-          var name = value.split(' ')
-          this.firstname = name[0],
-          this.lastname = name[name.length-1]
+          var name = value
+          this.firstname = name
+          
        }
                 }
             }

@@ -1,11 +1,12 @@
 <template>
   <div>
   	<app-header v-bind:title="title" ></app-header>
-  	<app-ninja v-bind:ninjas="ninjas"></app-ninja>
+  	<app-ninja></app-ninja>
   	<app-footer v-bind:copywrite="copywrite"></app-footer>
   	<modelexample></modelexample>
-  	 	
+  	 	<h1> {{ name }} </h1>
   </div>
+
 </template>
 
 <script>
@@ -28,15 +29,16 @@ export default {
 
   data () {
     return {
- 	ninjas : [
-      {name:'Meet',age:'25',show:false},
-      {name:'parth',age:'28',show:false},
-      {name:'shubham',age:'22',show:false}
-     ],
+ 
      title : 'Vue Project',
      copywrite : '@copywrite'
        
     }
+  },
+  computed: {
+    name(){
+      return this.$store.state.name
+    } 
   }
 }
 </script>
