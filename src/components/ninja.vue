@@ -11,9 +11,7 @@
     <h2> {{ sale }}</h2>
     <h2> {{ amount }}</h2>
     <button v-on:click="reduceamount">reduce amount</button>
-    <label>write </label><input type="text" v-model="new">
-  </div>
-    <h2>note: {{ hello }}</h2>  
+  
   </div>
 </template>
 
@@ -36,9 +34,7 @@ export default {
     // amount(){
     //   return this.$store.getters.amount;
     // }
-    new(){
-      return this.$store.state.message ;
-    }
+  
     
     ...mapGetters({
       amount : 'amount',
