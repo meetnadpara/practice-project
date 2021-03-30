@@ -4,7 +4,7 @@
   	<app-ninja></app-ninja>
   	<app-footer v-bind:copywrite="copywrite"></app-footer>
   	<modelexample></modelexample>
-  	 	<h1> {{ name }} </h1>
+  	 	
   </div>
 
 </template>
@@ -34,12 +34,8 @@ export default {
      copywrite : '@copywrite'
        
     }
-  },
-  computed: {
-    name(){
-      return this.$store.state.name
-    } 
   }
+ 
 }
 </script>
 
