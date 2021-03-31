@@ -9,7 +9,7 @@
 
 </template>
 
-<script>
+<script>  
 
 import Header from "./components/header.vue"
 import Footer from "./components/footer.vue"
@@ -24,7 +24,6 @@ export default {
 		'app-footer': Footer,
 		'app-ninja': Ninja,
 		'modelexample': Modelexample
-
 		},
 
   data () {
@@ -32,7 +31,7 @@ export default {
  
      title : 'Vue Project',
      copywrite : '@copywrite'
-       
+     user: null
     }
   }
  
