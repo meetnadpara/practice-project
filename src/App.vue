@@ -31,7 +31,9 @@ export default {
     return {
  
      title : 'Vue Project',
-     copywrite : '@copywrite'
+     copywrite : '@copywrite',
+     title : 'name',
+     newentry : 'meet'
        
     }
   }
